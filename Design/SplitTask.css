@@ -1,5 +1,6 @@
  :root {
     /* [color] */
+    /* standard colors */
     --clr-primary: 0 0% 10%;
     --clr-secondary: 0 0% 12%;
     --clr-tertiary: 0 0% 25%;
@@ -66,36 +67,8 @@
     background:hsl(var(--clr-secondary));
 }
 
-.bg--tertiary {
-    background:hsl(var(--clr-tertiary));
-}
-
-.bg--border-1 {
-    background:hsl(var(--clr-border-1));
-}
-
-.bg--border-2 {
-    background:hsl(var(--clr-border-2));
-}
-
 .bg--icon {
     background:hsl(var(--clr-icon));
-}
-
-.bg--action {
-    background:hsl(var(--clr-white));
-}
-
-.bg-black {
-    background:hsl(var(--clr-black));
-}
-
-.bg--muted {
-    background:hsl(var(--clr-muted));
-}
-
-.bg--accent {
-    background:hsl(var(--clr-accent));
 }
 
 /* color */
@@ -114,7 +87,6 @@ body {
     font-size: 16px;
     min-height: 100vh;
     position: relative;
-   
 }
 
 /* ------------------------ */
