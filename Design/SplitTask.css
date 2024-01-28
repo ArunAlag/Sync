@@ -1,0 +1,259 @@
+ :root {
+    /* [color] */
+    --clr-primary: 0 0% 10%;
+    --clr-secondary: 0 0% 12%;
+    --clr-tertiary: 0 0% 25%;
+    --clr-border-1: 0 0% 18%;
+    --clr-border-2: 0 0% 22%;
+    --clr-icon: 0 0% 84%;
+    --clr-white: 0 0% 98%;
+    --clr-black: 0 0% 0%;
+    --clr-muted: 0 0% 34%;
+    --clr-action: 221 37% 81%;
+
+    /* [font] */
+    /* family */
+    --ff-title: "Righteous";
+    --ff-common: "Roboto";
+
+    /* weight */
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    /* [spacing] */
+    --space : 0.5rem;
+    --space-1 : 1rem;
+    --space-2 : 1.5rem;
+    --space-3 : 2rem;
+    --space-4 : 2.5rem;
+}
+
+/* ------------------------ */
+/* Utility Classes          */
+/* ------------------------ */
+/* [spacing] */
+/* margin */
+.mg-top {
+    margin-top: var(--space)
+}
+
+/* padding */
+.pd-top {
+    padding-top: var(--space)
+}
+
+/* [display] */
+.d--flex {
+    display: flex;
+}
+
+.pd-top-1 {
+    padding-top: var(--space-1)
+}
+
+/* [fonts] */
+.ff--title {
+    font-family: var(--ff-title);
+}
+
+/* [colors] */
+/* background */
+.bg--primary {
+    background:hsl(var(--clr-primary));
+}
+
+.bg--secondary {
+    background:hsl(var(--clr-secondary));
+}
+
+.bg--tertiary {
+    background:hsl(var(--clr-tertiary));
+}
+
+.bg--border-1 {
+    background:hsl(var(--clr-border-1));
+}
+
+.bg--border-2 {
+    background:hsl(var(--clr-border-2));
+}
+
+.bg--icon {
+    background:hsl(var(--clr-icon));
+}
+
+.bg--action {
+    background:hsl(var(--clr-white));
+}
+
+.bg-black {
+    background:hsl(var(--clr-black));
+}
+
+.bg--muted {
+    background:hsl(var(--clr-muted));
+}
+
+.bg--accent {
+    background:hsl(var(--clr-accent));
+}
+
+/* color */
+.text--white {
+    color:hsl(var(--clr-white));
+}
+
+.text--black {
+    color: hsl(var(--clr-black));
+}
+
+/* ------------------------ */
+/* General Elements         */
+/* ------------------------ */
+body {
+    font-size: 16px;
+    min-height: 100vh;
+    position: relative;
+   
+}
+
+/* ------------------------ */
+/* General Class            */
+/* ------------------------ */
+
+.nav {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.nav__title {
+    display: none;
+    font-size: 2rem;
+}
+
+.nav__list {
+    padding-block: .5rem;
+    justify-content: space-around;
+}
+
+.nav__item {
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__icons {
+    height: 24px;
+    aspect-ratio: 1;
+}
+
+.nav__floating-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    background: hsl(var(--clr-white));
+    border-radius: 50%;
+    bottom: 5rem;
+    padding: 0.75rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.nav__floating-btn > svg {
+    fill: hsl(var(--clr-primary));
+}
+
+.nav__new-post {
+    display: none;
+}
+
+/* ------------------------ */
+/* Dynamic Classes          */
+/* ------------------------ */
+.active {
+    color: hsl(var(--clr-action));
+    & svg {
+        & .nav__icons {
+            fill: hsl(var(--clr-action))
+        }
+    }
+}
+
+/* ------------------------ */
+/* Responsive Screens       */
+/* ------------------------ */
+@media (min-width: 640px) {
+    /* Navigation */
+    .nav {
+        display: flex;
+        flex-direction: column;
+        bottom: auto;
+        width: 150px;
+        height: 100%;
+    }
+
+    .nav__title {
+        padding: 2rem;
+        display: block;
+        text-align: center;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav__item {
+        border-radius: 10px;
+        margin-inline: .5rem;
+        padding: 0.5rem 1rem;
+        flex-direction: row;
+    }
+
+    .nav__item > span {
+        margin-left: .5rem
+    }
+
+    .nav__floating-btn {
+        display: none;
+    }
+
+    .nav__new-post {
+        display: block;
+        margin-top: auto;
+        margin-inline: .5rem;
+        margin-bottom: 5rem;
+        padding: .5rem;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .active {
+        background-color: hsl(var(--clr-tertiary));
+        color: hsl(var(--clr-icon));
+        & svg {
+            & .nav__icons {
+                fill: hsl(var(--clr-icon))
+            }
+        }
+    }
+
+    .div-container {
+        outline: 1px solid yellow;
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav {
+        width: 200px;
+        font-size: 1.3rem;
+    }
+
+    .nav__title {
+        font-size: 3rem;
+    }
+}
+
