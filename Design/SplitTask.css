@@ -48,6 +48,40 @@
     display: flex;
 }
 
+/* [display:flex] */
+.flex--col {
+    flex-direction: column;
+}
+
+
+.justify--center {
+    justify-content: center;
+}
+
+.justify--between {
+    justify-content: space-between;
+}
+
+.justify--around {
+    justify-content: space-around;
+}
+
+.justify--evenly {
+    justify-content: space-evenly;
+}
+
+.align--center {
+    align-items: center;
+}
+
+.gap--xs {
+    gap: 0.5rem;
+}
+
+.gap--sm {
+    gap: 1rem;
+}
+
 .pd-top-1 {
     padding-top: var(--space-1)
 }
@@ -75,7 +109,11 @@
     background:hsl(var(--clr-icon));
 }
 
-/* color */
+.bg--white {
+    background-color: hsl(var(--clr-white));
+}
+
+/* text */
 .text--white {
     color:hsl(var(--clr-white));
 }
@@ -104,6 +142,15 @@
     color: hsl(var(--clr-red-complement));
 }
 
+/* border */
+.border--black--1 {
+    border: 1px solid hsl(var(--clr-border-1));
+}
+
+.border--black--2 {
+    border: 1px solid hsl(var(--clr-border-1));
+}
+
 .border--yellow {
     border: 1px solid hsl(var(--clr-yellow));
 }
@@ -120,9 +167,36 @@
     border: 1px solid hsl(var(--clr-red));
 }
 
+/* svg */
 .fill--red {
     fill: hsl(var(--clr-red));
 }
+
+/* [border] */
+/* border-radius */
+
+.border-radius--1 {
+    border-radius: 5px;
+}
+
+.border-radius--2 {
+    border-radius: 10px;
+}
+
+.border--radius--circle {
+    border-radius: 50%;
+}
+
+/* [position] */
+.ps--relative {
+    position: relative;
+}
+
+.ps--absolute {
+    position: absolute;
+}
+
+/* [component specific] */
 
 /* [pill] */
 .pill {
@@ -137,7 +211,6 @@
 body {
     font-size: 16px;
     min-height: 100vh;
-    position: relative;
     padding-bottom: 5rem;
     line-height: 1;
 }
@@ -153,6 +226,7 @@ body {
     width: 100%;
     font-size: 1.1rem;
     border-top: 1px solid hsl(var(--clr-border-1));
+    z-index: 3;
 }
 
 .nav__title {
@@ -178,15 +252,8 @@ body {
 }
 
 .nav__floating-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1;
-    background: hsl(var(--clr-white));
-    border-radius: 50%;
     bottom: 5rem;
     padding: 0.75rem;
-    position: absolute;
     right: 1rem;
 }
 
@@ -223,6 +290,7 @@ body {
         height: 100%;
         border-top: 0;
         border-right: 1px solid hsl(var(--clr-border-1));
+        z-index: 0;
     }
 
     .nav__title {
@@ -264,8 +332,6 @@ body {
         margin-bottom: 5rem;
         padding: .5rem;
         text-align: center;
-        border-radius: 10px;
-        background-color: hsl(var(--clr-white));
     }
 
     .active {
@@ -293,24 +359,12 @@ body {
 /* [Homepage] */
 .projects {
     padding: 1rem;
-    gap: 1rem;
     flex-direction: column;
 }
 
-.projects__project {
-    flex-direction: column;
+.projects__card {
     width: 100%;
-    justify-content: space-between;
-    border: 1px solid hsl(var(--clr-border-1));
-    align-self: flex-start;
     padding: 1rem 0;
-    border-radius: 10px;
-}
-
-.project__title-container {
-    align-items: center;
-    width: 100%;
-    gap : 1rem;
 }
 
 .project__title {
@@ -319,28 +373,15 @@ body {
 }
 
 .project__more {
-    position: relative;
-    border-radius: 5px;
     margin-right: 1rem;
-    border: 1px solid hsl(var(--clr-border-2));
     padding: .15rem .3rem;
-    align-items: center;
-    justify-content: center;
 }
 
 .project__options {
     aspect-ratio: 1.5/1;
-    align-items: center;
-    background: hsl(var(--clr-secondary));
-    border-radius: 5px;
-    border: 1px solid hsl(var(--clr-border-2));
-    flex-direction: column;
-    gap: .5rem;
-    justify-content: center;
     padding: .5rem;
-    position: absolute;
     right: 0;
-    top: 2.2rem;
+    top: 2.5rem;
     visibility: hidden;
     width: 6rem;
     z-index: 2;
@@ -352,25 +393,20 @@ body {
 
 .project__option {
     width: 100%;
-    align-items: center;
     font-size: 0.75rem;
-    column-gap: .5rem;
 }
 
 .project__description {
-   background-color: hsl(var(--clr-secondary));
    font-size: 0.75rem;
    text-align: left;
    margin: 1rem;
    font-style: italic;
    line-height: 1.5;
    padding: .5rem;
-   border-radius: 5px;
 }
 
 .project__footer {
     margin: 0 1rem;
-    justify-content: space-evenly;
 }
 
 /* ------------------------ */
@@ -391,14 +427,10 @@ body {
     .projects {
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 0.5rem;
-        row-gap: 1rem;
-        justify-content: flex-start;
-        align-content: flex-start;
     }
 
-    .projects__project {
-        width: 49%;
+    .projects__card {
+        width: 48%;
     }
 }
 
@@ -409,7 +441,7 @@ body {
 }
 
 @media (min-width: 1100px) {
-    .projects__project {
+    .projects__card {
         width: 32%;
     }
 }
