@@ -1,0 +1,47 @@
+:root {
+    /* [color] */
+    /* standard colors */
+    --clr-primary: 0 0% 10%;
+    --clr-secondary: 0 0% 12%;
+    --clr-tertiary: 0 0% 25%;
+    --clr-border-1: 0 0% 18%;
+    --clr-border-2: 0 0% 22%;
+    --clr-icon: 0 0% 84%;
+    --clr-white: 0 0% 98%;
+    --clr-black: 0 0% 0%;
+    --clr-muted: 0 0% 34%;
+    --clr-action: 221 37% 81%;
+
+    /* interactive colors colors */
+    --clr-yellow:45 79% 43%;
+    --clr-yellow-complement: 47 100% 92%;  
+    --clr-purple: 270 79% 43%;
+    --clr-purple-complement: 263 100% 92%;
+    --clr-blue: 227 79% 43%;
+    --clr-blue-complement: 220 100% 92%;
+    --clr-red: 7 79% 43%;
+    --clr-red-complement: 4 100% 92%;
+
+    /* [font] */
+    /* family */
+    --ff-title: "Righteous";
+    --ff-common: "Roboto";
+
+    /* weight */
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    /* [spacing] */
+    --space : 0.5rem;
+    --space-1 : 1rem;
+    --space-2 : 1.5rem;
+    --space-3 : 2rem;
+    --space-4 : 2.5rem;
+}
+
+body {
+    font-size: 16px;
+    min-height: 100vh;
+    padding-bottom: 5rem;
+    line-height: 1;
+}

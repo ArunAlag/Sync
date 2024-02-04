@@ -1,0 +1,164 @@
+/* [display] */
+.d--flex {
+    display: flex;
+}
+
+/* [display:flex] */
+.flex--col {
+    flex-direction: column;
+}
+
+.justify--center {
+    justify-content: center;
+}
+
+.justify--between {
+    justify-content: space-between;
+}
+
+.justify--around {
+    justify-content: space-around;
+}
+
+.justify--evenly {
+    justify-content: space-evenly;
+}
+
+.align--center {
+    align-items: center;
+}
+
+.gap--xs {
+    gap: 0.5rem;
+}
+
+.gap--sm {
+    gap: 1rem;
+}
+
+.pd--top--2 {
+    padding-top: var(--space-2)
+}
+
+/* [fonts] */
+.ff--title {
+    font-family: var(--ff-title);
+}
+
+.ff--common {
+    font-family: var(--ff-common);
+}
+
+/* [colors] */
+/* background */
+.bg--primary {
+    background:hsl(var(--clr-primary));
+}
+
+.bg--secondary {
+    background:hsl(var(--clr-secondary));
+}
+
+.bg--icon {
+    background:hsl(var(--clr-icon));
+}
+
+.bg--white {
+    background-color: hsl(var(--clr-white));
+}
+
+/* text */
+.text--white {
+    color:hsl(var(--clr-white));
+}
+
+.text--black {
+    color: hsl(var(--clr-black));
+}
+
+.text--red {
+    color: hsl(var(--clr-red));
+}
+
+.text--yellow--comp {
+    color: hsl(var(--clr-yellow-complement));
+}
+
+.text--purple--comp {
+    color: hsl(var(--clr-purple-complement));
+}
+
+.text--blue--comp {
+    color: hsl(var(--clr-blue-complement));
+}
+
+.text--red--comp {
+    color: hsl(var(--clr-red-complement));
+}
+
+/* border */
+.border--black--1 {
+    border: 1px solid hsl(var(--clr-border-1));
+}
+
+.border--black--2 {
+    border: 1px solid hsl(var(--clr-border-1));
+}
+
+.border--yellow {
+    border: 1px solid hsl(var(--clr-yellow));
+}
+
+.border--purple {
+    border: 1px solid hsl(var(--clr-purple));
+}
+
+.border--blue {
+    border: 1px solid hsl(var(--clr-blue));
+}
+
+.border--red {
+    border: 1px solid hsl(var(--clr-red));
+}
+
+/* svg */
+.fill--red {
+    fill: hsl(var(--clr-red));
+}
+
+.fill--black {
+    fill: hsl(var(--clr-primary));
+}
+
+/* [border] */
+/* border-radius */
+
+.border-radius--1 {
+    border-radius: 5px;
+}
+
+.border-radius--2 {
+    border-radius: 10px;
+}
+
+.border--radius--circle {
+    border-radius: 50%;
+}
+
+/* [position] */
+.ps--relative {
+    position: relative;
+}
+
+.ps--absolute {
+    position: absolute;
+}
+
+/* [component specific] */
+
+/* [pill] */
+.pill {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

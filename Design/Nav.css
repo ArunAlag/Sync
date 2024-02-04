@@ -1,0 +1,131 @@
+.nav {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    font-size: 1.1rem;
+    border-top: 1px solid hsl(var(--clr-border-1));
+    z-index: 3;
+}
+
+.nav__title {
+    font-size: 2rem;
+    display: none;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.nav__item {
+    flex-direction: column;
+    align-items: center;
+    color: hsl(var(--clr-muted));
+}
+
+.nav__svg {
+    height: 30px;
+    aspect-ratio: 1;
+}
+
+.nav__icons {
+    fill: hsl(var(--clr-muted));
+}
+
+.nav__floating-btn {
+    bottom: 5rem;
+    padding: 0.75rem;
+    right: 1rem;
+}
+
+.nav__new-post {
+    display: none;
+}
+
+.active {
+    color: hsl(var(--clr-action));
+    & svg {
+        & .nav__icons {
+            fill: hsl(var(--clr-action))
+        }
+    }
+}
+
+/* ------------------------ */
+/* Nav Responsiveness       */
+/* ------------------------ */
+
+@media (min-width: 640px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        bottom: auto;
+        width: 150px;
+        height: 100%;
+        border-top: 0;
+        border-right: 1px solid hsl(var(--clr-border-1));
+        z-index: 0;
+    }
+
+    .nav__title {
+        display: block;
+        text-align: center;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 1rem;
+        border-top: 0;
+    }
+
+    .nav__item {
+        border-radius: 10px;
+        margin-inline: .5rem;
+        padding: 0.5rem 1rem;
+        flex-direction: row;
+        color: hsl(var(--clr-white));
+    }
+
+    .nav__item > span {
+        margin-left: .5rem
+    }
+
+    .nav__icons {
+        fill: hsl(var(--clr-white));
+    }
+
+    .nav__floating-btn {
+        display: none;
+    }
+
+    .nav__new-post {
+        display: block;
+        margin-top: auto;
+        margin-inline: .5rem;
+        margin-bottom: 5rem;
+        padding: .5rem;
+        text-align: center;
+    }
+
+    .active {
+        background-color: hsl(var(--clr-tertiary));
+        color: hsl(var(--clr-icon));
+        & svg {
+            & .nav__icons {
+                fill: hsl(var(--clr-icon))
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav {
+        width: 200px;
+        font-size: 1.3rem;
+    }
+
+    .nav__title {
+        font-size: 3rem;
+    }
+}
