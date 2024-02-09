@@ -12,7 +12,9 @@
     --clr-muted: 0 0% 34%;
     --clr-action: 221 37% 81%;
 
-    /* interactive colors colors */
+    /* interactive colors */
+    --clr-green: 133 34% 24%;
+    --clr-green-complement: 100 69% 95%;
     --clr-yellow:45 79% 43%;
     --clr-yellow-complement: 47 100% 92%;  
     --clr-purple: 270 79% 43%;
@@ -32,6 +34,7 @@
     --fw-regular: 400;
 
     /* [spacing] */
+    --space-2xs : 0.25rem;
     --space : 0.5rem;
     --space-1 : 1rem;
     --space-2 : 1.5rem;

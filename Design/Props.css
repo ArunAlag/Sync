@@ -1,0 +1,126 @@
+/* Search bar */
+.header {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.search__header > input {
+    width: 100%;
+}
+
+.search__header > input::placeholder {
+    font-size: .875rem;
+    text-align: center;
+}
+
+/* ------------------------ */
+/* Searchbar Responsiveness */
+/* ------------------------ */
+
+@media (min-width: 640px) { 
+    .search__header {
+        margin-left: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .search__header {
+        margin-left: 200px
+    }
+}
+
+.props {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.props__card {
+    width: 85%;
+    padding: 1rem;
+}
+
+.props__title {
+    margin-left: 1rem;
+}
+
+.props__tasks {
+    height: 200px;
+    overflow-y:scroll;
+}
+
+/* Scrollbar CSS Start */
+
+.props__tasks::-webkit-scrollbar {
+    width: .65rem;
+}
+
+.props__tasks::-webkit-scrollbar-thumb {
+    background: hsl(var(--clr-muted));
+    border-radius: 100vw;
+}
+/* Scrollbar CSS End */
+
+.props__task-list {
+    width: 95%;
+    margin: 1rem auto;
+    max-height: 100px;
+}
+
+.props__task-list > :not(:first-child) {
+    margin-top: 1rem;
+}
+
+.props__total-tasks {
+    padding: .5rem;
+    aspect-ratio: 1/1;
+}
+
+/* ------------------------ */
+/* Props Responsiveness     */
+/* ------------------------ */
+
+@media (min-width: 640px) { 
+    .props {
+        margin-left: 150px;
+        margin-bottom: 0;
+    }
+
+    .props__description {
+        max-width: 40rem;
+    }
+
+    .props__footer {
+        max-width: 40rem;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .props {
+        flex-direction: row;
+        margin-left: calc(150px + 1rem);
+        margin-right: 1rem;
+    }
+    .props__card {
+        width: 44%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .props {
+        margin-left: calc(200px + 1rem);
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .props__card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .props__card {
+        width: 46%;
+    }
+}

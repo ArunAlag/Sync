@@ -34,16 +34,12 @@
 
 .project__option {
     width: 100%;
-    font-size: 0.75rem;
 }
 
 .project__description {
-   font-size: 0.75rem;
    text-align: left;
    margin: 1rem;
-   font-style: italic;
    line-height: 1.5;
-   padding: .5rem;
 }
 
 .project__footer {

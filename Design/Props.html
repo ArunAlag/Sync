@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Task</title>
+    <link rel="stylesheet" href="Reset.css">
+    <link rel="stylesheet" href="Root.css">
+    <link rel="stylesheet" href="Utility.css">
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="Props.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+<body class="bg--primary text--white ff--common">
+    <nav class="nav bg--secondary">
+        <div class="nav__title ff--title pd--top--2">
+            Sync
+        </div>
+
+        <div class="nav__menu">
+            <ul class="nav__list d--flex">
+                <li class="nav__item d--flex">
+                    <span class="material-icons-outlined" style="font-size: 30px;"> home </span>
+                     <span> Home </span>
+                </li>
+                <li class="nav__item d--flex active" >
+                    <span class="material-icons-outlined" style="font-size: 30px;"> folder </span>
+                    <span> Props </span>
+                </li>
+                <li class="nav__item d--flex">
+                    <span class="material-icons-outlined" style="font-size: 30px;"> settings </span>
+                    <span> Config </span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="nav__new-post border-radius--2 bg--white text--black">
+            <span> New </span>
+        </div>
+
+        <div class="nav__floating-btn ps--absolute bg--white border--radius--circle">
+            <span class="material-icons-outlined text--black" style="font-size: 50px;"> add </span>
+        </div>
+    </nav>
+ 
+    <section class="header pd--top--2">
+        <div class="search__header d--flex ps--relative align--center border--radius--3 border--black--1">
+            <input type="text" class="pd--xs bg--transparent text--white border--none" placeholder="search with project name...">
+        </div>
+    </section>
+
+    <section class="props d--flex gap--sm justify--between align--center pd--top--2 mg--bottom--2">
+        <div class="props__card border--black--1 border-radius--1">
+            <div class="props__header d--flex justify--between align--center">
+                <h2 class="props__title">Project Title</h2>
+                <div class="d--flex gap--xs">
+                    <div class="pill border--purple text--purple--comp">30/03/2024</div>
+                    <div class="pill border--blue text--blue--comp">Twin Tower</div>
+                </div>
+            </div>
+
+            <div class="props__description bg--secondary border--black--1 border-radius--1 fs--xs font--italic mg--top--1 pd--xs">
+                This is an example of project description that I think will be suffice to determine the project desc
+            </div>
+
+            <div class="props__tasks bg--secondary border--black--1 border-radius--1 mg--top--1">
+                <ul class="props__task-list pd--top">
+                    <li class="d--flex justify--evenly align--center gap--sm border--green text--green--comp border-radius--2 pd--xs">
+                        <button class="bg--transparent border--none">
+                            <span class="material-icons-outlined border--green text--green--comp border-radius--1 pd--2xs" style="font-size: 24px;"> done </span>
+                        </button>
+                         <p class="line--height--md fs--xs"> Communicate with the client for scripting </p> 
+
+                         <span class="material-icons-outlined bg--yellow text--yellow--comp border-radius--1 pd--2xs" style="font-size: 24px;"> edit </span>
+                    </li>
+
+                    <li class="d--flex justify--evenly align--center gap--sm border--black--1 text--green--comp border-radius--2 pd--xs">
+                        <button class="bg--transparent border--none">
+                            <span class="material-icons-outlined border--black--1 text--white border-radius--1 pd--2xs" style="font-size: 24px;"> close </span>
+                        </button>
+                         <p class="line--height--md fs--xs"> Communicate with the client for scripting </p> 
+
+                         <span class="material-icons-outlined bg--yellow text--yellow--comp border-radius--1 pd--2xs" style="font-size: 24px;"> edit </span>
+                    </li>
+
+                    <li class="d--flex justify--evenly align--center gap--sm border--black--1 text--green--comp border-radius--2 pd--xs">
+                        <button class="bg--transparent border--none">
+                            <span class="material-icons-outlined border--black--1 text--white border-radius--1 pd--2xs" style="font-size: 24px;"> close </span>
+                        </button>
+                         <p class="line--height--md fs--xs"> Communicate with the client for scripting </p> 
+
+                         <span class="material-icons-outlined bg--yellow text--yellow--comp border-radius--1 pd--2xs" style="font-size: 24px;"> edit </span>
+                    </li>
+
+                    <li class="d--flex justify--evenly align--center gap--sm border--black--1 text--green--comp border-radius--2 pd--xs">
+                        <button class="bg--transparent border--none">
+                            <span class="material-icons-outlined border--black--1 text--white border-radius--1 pd--2xs" style="font-size: 24px;"> close </span>
+                        </button>
+                         <p class="line--height--md fs--xs"> Communicate with the client for scripting </p> 
+
+                         <span class="material-icons-outlined bg--yellow text--yellow--comp border-radius--1 pd--2xs" style="font-size: 24px;"> edit </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="props__footer d--flex justify--evenly align--center mg--top--1">
+                <div class="props__total-tasks d--flex align--center border--radius--circle border--yellow text--yellow--comp fs--sm"> <span>10</span> / <span>11</span> </div>
+                <div class="pill d--flex justify--evenly align--center gap--xs bg--red text--red--comp">
+                    <span class="material-icons-outlined" style="font-size: 20px;"> add </span>
+                    <span style="font-size: 16px;">Todo</span>
+                </div>
+                <div class="pill d--flex justify--evenly align--center gap--xs bg--purple text--purple--comp">
+                    <span class="material-icons-outlined" style="font-size: 20px;"> edit </span>
+                    <span style="font-size: 16px;">Project</span>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+</body>
+</html>

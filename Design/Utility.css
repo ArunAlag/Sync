@@ -36,10 +36,46 @@
     gap: 1rem;
 }
 
+/* [spacing] */
+.pd--2xs {
+    padding: var(--space-2xs);
+}
+.pd--xs {
+    padding: var(--space)
+}
+
+.pd--sm {
+    padding: var(--space-1)
+}
+
+.pd--top {
+    padding-top: var(--space);
+}
+
+.pd--top--1 {
+    padding-top: var(--space-1)
+}
+
 .pd--top--2 {
     padding-top: var(--space-2)
 }
 
+.mg--top--0 {
+    margin-top: var(--space);
+}
+
+.mg--top--1 {
+    margin-top: var(--space-1);
+}
+
+.mg--bottom--2 {
+    margin-bottom: var(--space-2);
+}
+
+/* [spacing: fonts] */
+.line--height--md {
+    line-height: 1.5;
+}
 /* [fonts] */
 .ff--title {
     font-family: var(--ff-title);
@@ -49,14 +85,42 @@
     font-family: var(--ff-common);
 }
 
+.fs--xs {
+    font-size: 0.75rem;
+}
+
+.fs--sm {
+    font-size: 0.875rem;
+}
+
+.font--italic {
+    font-style: italic;
+}
+
 /* [colors] */
 /* background */
+.bg--transparent {
+    background-color: transparent;
+}
+
 .bg--primary {
     background:hsl(var(--clr-primary));
 }
 
 .bg--secondary {
     background:hsl(var(--clr-secondary));
+}
+
+.bg--yellow {
+    background: hsl(var(--clr-yellow))
+}
+
+.bg--red {
+    background: hsl(var(--clr-red))
+}
+
+.bg--purple {
+    background: hsl(var(--clr-purple));
 }
 
 .bg--icon {
@@ -74,6 +138,10 @@
 
 .text--black {
     color: hsl(var(--clr-black));
+}
+
+.text--light--black {
+    color: hsl(var(--clr-border-1));
 }
 
 .text--red {
@@ -96,13 +164,24 @@
     color: hsl(var(--clr-red-complement));
 }
 
+.text--green--comp {
+    color: hsl(var(--clr-green-complement));
+}
 /* border */
+.border--none {
+    border: none;
+}
+
 .border--black--1 {
     border: 1px solid hsl(var(--clr-border-1));
 }
 
 .border--black--2 {
     border: 1px solid hsl(var(--clr-border-1));
+}
+
+.border--green {
+    border: 1px solid hsl(var(--clr-green));
 }
 
 .border--yellow {
@@ -121,15 +200,6 @@
     border: 1px solid hsl(var(--clr-red));
 }
 
-/* svg */
-.fill--red {
-    fill: hsl(var(--clr-red));
-}
-
-.fill--black {
-    fill: hsl(var(--clr-primary));
-}
-
 /* [border] */
 /* border-radius */
 
@@ -139,6 +209,10 @@
 
 .border-radius--2 {
     border-radius: 10px;
+}
+
+.border--radius--3 {
+    border-radius: 30px;
 }
 
 .border--radius--circle {
@@ -162,3 +236,10 @@
     padding: 0.5rem;
     border-radius: 5px;
 }
+
+/* [svg] */
+.svg--lg {
+    width: 30px;
+    height: 30px;
+}
+
